@@ -197,7 +197,7 @@ body {
 .completed {
   text-decoration: line-through;
 }
-@media (min-width: 380px) and (max-width: 480px) {
+@media (max-width: 400px) {
   .task-item {
     border-radius: 2px;
     padding: 10px;
