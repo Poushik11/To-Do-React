@@ -3,11 +3,13 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
   overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-color: #282828;
 }
 
 .container {
@@ -99,11 +101,11 @@ body {
 
 .time {
   margin-top: 10px;
-
   font-size: 2rem;
   color: white;
   margin-left: 2px;
   border-radius: 4px;
+  background-color: #282828;
 }
 
 .clock {
@@ -187,4 +189,38 @@ body {
 }
 .completed {
   text-decoration: line-through;
+}
+@media (max-width: 400px) {
+  .task-item {
+    padding: 3px;
+    background-color: #f9f9f9;
+    border-radius: 2px;
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  #task {
+    font-size: 1.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 2px solid #8ccec9;
+    width: 60vw;
+    padding-top: 1rem;
+    background-color: rgba(50, 46, 46, 0.486);
+    color: white;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .content {
+    padding-top: 110px;
+  }
+
+  .task-item {
+    width: 90vw;
+    font-size: 1.8rem;
+  }
 }
