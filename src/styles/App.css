@@ -7,9 +7,10 @@
 }
 body {
   overflow-x: hidden;
-  width: 100vw;
+  width: 100;
   height: 100vh;
   background-color: #282828;
+  min-width: 350px;
 }
 
 .container {
@@ -150,10 +151,14 @@ body {
 
 .task-item {
   padding: 5px;
-  background-color: #f9f9f9;
+  background-color: #282c35;
   border-radius: 4px;
   padding: 15px;
+  color: white;
   font-size: 2.2rem;
+  box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+    0 0 0 1px hsla(0, 0%, 0%, 0.05), 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+    0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
 }
 
 .taskbar {
@@ -181,6 +186,8 @@ body {
   color: red;
   font-weight: 600;
   font-size: 1.6rem;
+  background-color: #36454f;
+  box-shadow: 0px 0px 1px black;
 }
 .checkbox {
   margin-right: 15px;
@@ -190,14 +197,17 @@ body {
 .completed {
   text-decoration: line-through;
 }
-@media (max-width: 400px) {
+@media (min-width: 380px) and (max-width: 480px) {
   .task-item {
-    padding: 3px;
-    background-color: #f9f9f9;
     border-radius: 2px;
     padding: 10px;
     font-size: 1.3rem;
     width: 100%;
+    background-color: #282c35;
+    color: white;
+    box-shadow: inset 0 0 0.5px 1px hsla(0, 0%, 100%, 0.075),
+      0 0 0 1px hsla(0, 0%, 0%, 0.05), 0 0.3px 0.4px hsla(0, 0%, 0%, 0.02),
+      0 0.9px 1.5px hsla(0, 0%, 0%, 0.045), 0 3.5px 6px hsla(0, 0%, 0%, 0.09);
   }
   #task {
     font-size: 1.3rem;
